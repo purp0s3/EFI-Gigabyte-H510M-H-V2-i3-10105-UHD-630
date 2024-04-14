@@ -25,6 +25,6 @@
 ### Notes
 - You may need to change certain values, quirks, patches and kexts. Always use [ProperTree](https://github.com/corpnewt/ProperTree) to make sure your config.plist is matching what you have on your EFI folder.
 - If you have more than 1 NVME SSD installed, the macOS installer won't boot. I had to manually remove the one I use for Windows for the installation process, after it's installed it works fine.
-- If you don't have a incompatible dGPU or plan to use your compatible dGPU, remove **-wenoegpu** from your boot-args. 
-- If you are installing macOS, I suggest you leave the Misc -> Debug values and verbose boot as it is, as it will help you with troubleshooting.
-- When you have macOS fully installed and working, I suggest you follow [the Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html#macos-decluttering) to disable debugging properties and verbose boot.
+- If you don't have a incompatible dGPU or plan to use your compatible dGPU, remove **-wenoegpu** from your boot-args.
+- If you are installing macOS, I suggest you leave the Misc -> Debug values and boot-args as it is, as it will help you with troubleshooting.
+- When you have macOS fully installed and working, I suggest you remove **-igfxvesa** from your boot-args to enable full acceleration on your iGPU. Also follow [the Post-Install Guide](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html#macos-decluttering) to disable debugging properties and verbose boot.
