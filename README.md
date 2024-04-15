@@ -3,6 +3,8 @@
 
 ### Made using [OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/).
 
+<img align=center src="print.png" alt="macOS desktop">
+
 ## Specifications
 |Component|Hardware|
 |-|-|
